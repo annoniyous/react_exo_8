@@ -8,8 +8,10 @@ state = {
   nbr : 1
 }
 
-  render() {
+render() {
+    console.log(this.state.nbr);
     return (
+
       <div>
         <h1 onMouseOver={(e) =>{console.log(e.target.innerHTML)}}>Mon titre</h1>
         <button onClick={()=>{
@@ -18,6 +20,10 @@ state = {
 
         <button onCopy={() =>{
           console.log("Vous pouvez pas copier")
+        }}>salut</button>
+
+        <button onDoubleClick={() =>{
+          alert("Bien Bravo")
         }}>salut</button>
 
         
